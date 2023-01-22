@@ -4,12 +4,12 @@
       <div class="nav-wrapper">
         {#each arr as [item, content]}
           <div class="nav-item-wrapper">
-            {#if item === "Fashion"}
-            <div class="nav-item">{item}</div>
-            {:else}
-            <div class="nav-item">{item}</div>
-            <div class="nav-item-content" hidden>{content}</div>
-            {/if}
+            <div class="nav-item">{item}
+              {#if item !== "Fashion"}
+              <div class="nav-item-content" hidden>{content}</div>
+              {/if}
+            </div>
+            
           </div>
         {/each}
       </div>

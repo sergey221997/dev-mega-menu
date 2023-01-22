@@ -39,20 +39,13 @@ body {
 
 .nav-item-wrapper:hover .nav-item-content{
   display: block;
+  color: black;
 }
 
 .nav-item-wrapper:hover .nav-item {
   background-color: red;
   color: white;
 }
-
-/* .nav-item-content:hover {
-  display: block;
-}
-
-.nav-item:hover + .nav-item-content {
-  display: block;
-} */
 
 main {
   height: 100vh;
